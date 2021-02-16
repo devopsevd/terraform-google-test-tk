@@ -1,26 +1,30 @@
+variable "path" { default = "" }
+variable "cred_file" { default = ""}
+
 variable "project_id" {
-  default = "restricted-management-infra"
+  default = ""
 }
 
 variable "region" {
-  default = "us-central1"
+  default = ""
+}
+
+variable "zone" {
+  default = ""
 }
 
 variable "service_account" {
-  default = {
-    email = "terraform-scripting@restricted-management-infra.iam.gserviceaccount.com"
-    scopes = ["cloud-platform"]
-  }
+  default = {}
 }
 
 variable "subnetwork" {
-  default = "default"
+  default = ""
 }
 
 variable "num_instances" {
-  default = 1
+  default = ""
 }
 
 variable "hostname" {
-  default = "instance-simple"
+  default = ""
 }
